@@ -1,0 +1,12 @@
+:root {
+  --betoniq-blue: #1F3C5B;
+  --betoniq-green: #2FAE6E;
+  --betoniq-gray: #F2F4F6;
+  --betoniq-red: #D64545;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--betoniq-gray);
+}

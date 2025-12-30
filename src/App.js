@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Recete from "./components/Recete";
+import BirimMaliyet from "./components/BirimMaliyet";
+import SatisTeklif from "./components/SatisTeklif";
 
 function App() {
+  const [birimMaliyet, setBirimMaliyet] = useState(0);
+  const [recete, setRecete] = useState(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ padding: 20 }}>
+      <h1>BETONIQ</h1>
+
+      <Recete onReceteHazir={setRecete} />
+
+      <hr />
+
+      <BirimMaliyet onMaliyetHesapla={setBirimMaliyet} />
+
+      <hr />
+
+      {recete ? (
+        <SatisTeklif birimMaliyet={birimMaliyet} />
+      ) : (
+        <p style={{ color: "red" }}>⚠ Reçete seçilmedi.</p>
+      )}
     </div>
   );
 }
