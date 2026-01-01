@@ -25,6 +25,3 @@ git commit -m "feat: TS500 düzeltmeleri, rol kısıtları, streamlit app iskele
 git push
 git status -u
 """)
-
-del __pycache__\betoniq_ts500.cpython-313.pyc
-rmdir __pycache__
