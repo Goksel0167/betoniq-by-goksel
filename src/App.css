@@ -36,3 +36,77 @@
     transform: rotate(360deg);
   }
 }
+
+/* Responsive Tasarım */
+@media (max-width: 1024px) {
+  .app-container {
+    padding: 10px !important;
+    max-width: 100% !important;
+  }
+  
+  .header-section {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+  
+  .header-section > div {
+    text-align: center !important;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 5px !important;
+  }
+  
+  h1 {
+    font-size: 1.5rem !important;
+  }
+  
+  h3 {
+    font-size: 1.2rem !important;
+  }
+  
+  .maliyet-table {
+    font-size: 0.85rem !important;
+  }
+  
+  .maliyet-table input {
+    width: 50px !important;
+    padding: 3px !important;
+  }
+  
+  .button-group {
+    flex-direction: column !important;
+    gap: 5px !important;
+  }
+  
+  .button-group button {
+    width: 100% !important;
+  }
+  
+  .input-row {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  
+  .elek-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 2px !important;
+  }
+  
+  .section-box {
+    padding: 10px !important;
+  }
+  
+  button {
+    padding: 8px 12px !important;
+    font-size: 0.9rem !important;
+  }
+}
