@@ -60,5 +60,4 @@ html_data = load_react_build(BUILD_DIR)
 
 if html_data:
     # React uygulamasını ekrana bas
-    # height değerini uygulamanızın uzunluğuna göre artırıp azaltabilirsiniz (örn: 800, 1200)
     components.html(html_data, height=1000, scrolling=True)
